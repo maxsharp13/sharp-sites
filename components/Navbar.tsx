@@ -28,8 +28,8 @@ export default function NavBar() {
 
         <div className="hidden md:block">
           <Link
-            href="/contact"
-            className="rounded-full bg-blue-500 px-5 py-2 text-white font-semibold hover:bg-blue-600 transition"
+            href="mailto:maxsharpnack@gmail.com?subject=Project Inquiry - Sharp Sites"
+            className="rounded-full bg-blue-500 px-5 py-2 text-white font-semibold shadow-md hover:shadow-lg hover:scale-[1.02] transition-all"
           >
             Get Started
           </Link>
@@ -44,32 +44,20 @@ export default function NavBar() {
       </div>
 
       <div
-        className={`md:hidden absolute w-full bg-background border-b border-border shadow-md transition-all duration-300 ease-in-out overflow-hidden ${
+        className={`md:hidden absolute top-full left-0 w-full bg-background/95 backdrop-blur-md border-b border-border shadow-md transition-all duration-300 ease-in-out overflow-hidden z-50 ${
           open ? "max-h-[400px] py-6" : "max-h-0"
         }`}
       >
         <div className="flex flex-col items-center gap-6 text-lg font-medium text-textSub">
-          
-          <Link href="/services" onClick={() => setOpen(false)} className="hover:text-blue-500">
-            Services
-          </Link>
-
-          <Link href="/work" onClick={() => setOpen(false)} className="hover:text-blue-500">
-            Work
-          </Link>
-
-          <Link href="/contact" onClick={() => setOpen(false)} className="hover:text-blue-500">
-            Contact
-          </Link>
-
-          <Link href="/about" onClick={() => setOpen(false)} className="hover:text-blue-500">
-            About
-          </Link>
+          <Link href="/services" onClick={() => setOpen(false)}>Services</Link>
+          <Link href="/work" onClick={() => setOpen(false)}>Work</Link>
+          <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
+          <Link href="/about" onClick={() => setOpen(false)}>About</Link>
 
           <Link
-            href="/contact"
+            href="mailto:maxsharpnack@gmail.com?subject=Project Inquiry - Sharp Sites"
             onClick={() => setOpen(false)}
-            className="mt-2 w-[80%] text-center rounded-full bg-blue-500 px-6 py-3 text-white font-semibold hover:bg-blue-600 transition"
+            className="mt-2 w-[80%] text-center rounded-full bg-blue-500 px-6 py-3 text-white font-semibold shadow-md hover:shadow-lg transition"
           >
             Get Started
           </Link>
