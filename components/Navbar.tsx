@@ -8,18 +8,18 @@ export default function NavBar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="w-full border-b border-border bg-background relative">
+  <nav className="w-full border-b border-gray-200 bg-gray-100 relative">
       <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
         
       <Link href="/" className="flex items-center">
-            <Image
-                src="/logo.png"
-                alt="Sharp Sites Logo"
-                width={140}
-                height={40}
-                className="object-contain"
-                priority
-            />
+          <Image
+        src="/logo.png"
+        alt="Sharp Sites Logo"
+        width={180}
+        height={50}
+        className="object-contain"
+        priority
+        />
             </Link>
         <div className="hidden md:flex items-center gap-8 text-textSub">
           <Link href="/services">Services</Link>
