@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
@@ -10,15 +11,16 @@ export default function NavBar() {
     <nav className="w-full border-b border-border bg-background relative">
       <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
         
-        <Link href="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-lg bg-blue-200 flex items-center justify-center font-bold text-blue-600">
-            S
-          </div>
-          <div className="text-primary font-bold tracking-wide">
-            SHARP <span className="text-blue-500">SITES</span>
-          </div>
-        </Link>
-
+      <Link href="/" className="flex items-center">
+            <Image
+                src="/logo.png"
+                alt="Sharp Sites Logo"
+                width={140}
+                height={40}
+                className="object-contain"
+                priority
+            />
+            </Link>
         <div className="hidden md:flex items-center gap-8 text-textSub">
           <Link href="/services">Services</Link>
           <Link href="/work">Work</Link>
