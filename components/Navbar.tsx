@@ -1,47 +1,65 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 
-export default function Navbar() {
+export default function NavBar() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-white/90 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
+    <nav className="w-full border-b border-border bg-background">
+      <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
         
-        <Link href="/" className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent text-primary font-black">
+        <Link href="/" className="flex items-center gap-2">
+          <div className="w-10 h-10 rounded-lg bg-blue-200 flex items-center justify-center font-bold text-blue-600">
             S
           </div>
-          <div>
-            <p className="text-sm font-black tracking-[0.25em] text-textMain">
-              SHARP
-            </p>
-            <p className="-mt-1 text-sm font-black tracking-[0.25em] text-primary">
-              SITES
-            </p>
+          <div className="text-primary font-bold tracking-wide">
+            SHARP <span className="text-blue-500">SITES</span>
           </div>
         </Link>
 
-        <nav className="hidden items-center gap-8 text-sm text-textSub md:flex">
-          <Link href="/services" className="hover:text-primary transition">
-            Services
-          </Link>
-          <Link href="/work" className="hover:text-primary transition">
-            Work
-          </Link>
-          <Link href="/contact" className="hover:text-primary transition">
-            Contact
-          </Link>
-          <Link href="/about" className="hover:text-primary transition">
-            About
-            </Link>
-        </nav>
+        <div className="hidden md:flex items-center gap-8 text-textSub">
+          <Link href="/services">Services</Link>
+          <Link href="/work">Work</Link>
+          <Link href="/contact">Contact</Link>
+          <Link href="/about">About</Link>
+        </div>
 
-        <Link
-          href="/contact"
-          className="hidden rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-400 md:block"
+
+        <div className="hidden md:block">
+          <Link
+            href="/contact"
+            className="rounded-full bg-blue-500 px-5 py-2 text-white font-semibold hover:bg-blue-600 transition"
+          >
+            Get Started
+          </Link>
+        </div>
+
+        <button
+          className="md:hidden text-primary"
+          onClick={() => setOpen(!open)}
         >
-          Get Started
-        </Link>
-
+          ☰
+        </button>
       </div>
-    </header>
+
+      {open && (
+        <div className="md:hidden px-6 pb-4 space-y-4 text-textSub">
+          <Link href="/services" onClick={() => setOpen(false)}>Services</Link>
+          <Link href="/work" onClick={() => setOpen(false)}>Work</Link>
+          <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
+          <Link href="/about" onClick={() => setOpen(false)}>About</Link>
+
+          <Link
+            href="/contact"
+            className="block rounded-full bg-blue-500 px-5 py-2 text-white text-center font-semibold"
+            onClick={() => setOpen(false)}
+          >
+            Get Started
+          </Link>
+        </div>
+      )}
+    </nav>
   );
 }
