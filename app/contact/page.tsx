@@ -8,7 +8,7 @@ export default function ContactPage() {
           </h1>
   
           <p className="text-textSub mb-10">
-            Tell me what you need and I’ll get back to you quickly.
+            Tell me what your vision is and lets get to work.
           </p>
   
           <div className="rounded-xl border border-border bg-surface p-10 shadow-sm">
