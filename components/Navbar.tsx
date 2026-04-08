@@ -7,7 +7,7 @@ export default function NavBar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="w-full border-b border-border bg-background">
+    <nav className="w-full border-b border-border bg-background relative">
       <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
         
         <Link href="/" className="flex items-center gap-2">
@@ -26,7 +26,6 @@ export default function NavBar() {
           <Link href="/about">About</Link>
         </div>
 
-
         <div className="hidden md:block">
           <Link
             href="/contact"
@@ -37,29 +36,45 @@ export default function NavBar() {
         </div>
 
         <button
-          className="md:hidden text-primary"
+          className="md:hidden text-2xl text-primary"
           onClick={() => setOpen(!open)}
         >
-          ☰
+          {open ? "✕" : "☰"}
         </button>
       </div>
 
-      {open && (
-        <div className="md:hidden px-6 pb-4 space-y-4 text-textSub">
-          <Link href="/services" onClick={() => setOpen(false)}>Services</Link>
-          <Link href="/work" onClick={() => setOpen(false)}>Work</Link>
-          <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
-          <Link href="/about" onClick={() => setOpen(false)}>About</Link>
+      <div
+        className={`md:hidden absolute w-full bg-background border-b border-border shadow-md transition-all duration-300 ease-in-out overflow-hidden ${
+          open ? "max-h-[400px] py-6" : "max-h-0"
+        }`}
+      >
+        <div className="flex flex-col items-center gap-6 text-lg font-medium text-textSub">
+          
+          <Link href="/services" onClick={() => setOpen(false)} className="hover:text-blue-500">
+            Services
+          </Link>
+
+          <Link href="/work" onClick={() => setOpen(false)} className="hover:text-blue-500">
+            Work
+          </Link>
+
+          <Link href="/contact" onClick={() => setOpen(false)} className="hover:text-blue-500">
+            Contact
+          </Link>
+
+          <Link href="/about" onClick={() => setOpen(false)} className="hover:text-blue-500">
+            About
+          </Link>
 
           <Link
             href="/contact"
-            className="block rounded-full bg-blue-500 px-5 py-2 text-white text-center font-semibold"
             onClick={() => setOpen(false)}
+            className="mt-2 w-[80%] text-center rounded-full bg-blue-500 px-6 py-3 text-white font-semibold hover:bg-blue-600 transition"
           >
             Get Started
           </Link>
         </div>
-      )}
+      </div>
     </nav>
   );
 }
