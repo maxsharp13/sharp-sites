@@ -7,13 +7,14 @@ export default function Hero() {
       <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-10">
         <div className="grid items-center gap-14 lg:grid-cols-2">
 
+          {/* LEFT SIDE */}
           <div>
             <p className="mb-4 inline-block rounded-full bg-accent px-4 py-1 text-sm text-primary">
               Websites built for growth
             </p>
 
             <h1 className="text-5xl font-black leading-tight sm:text-6xl lg:text-7xl text-textMain">
-             Clean, efficient websites custom made to match your vision
+              Clean, efficient websites custom made to match your vision
             </h1>
 
             <p className="mt-6 max-w-xl text-lg text-textSub">
@@ -36,55 +37,34 @@ export default function Hero() {
                 View Work
               </a>
             </div>
-
-
-            <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3">
-              <div className="rounded-xl border border-border bg-surface p-4 shadow-sm">
-                <p className="font-bold text-primary">Fast</p>
-                <p className="text-sm text-textSub">
-                  Optimized performance
-                </p>
-              </div>
-
-              <div className="rounded-xl border border-border bg-surface p-4 shadow-sm">
-                <p className="font-bold text-primary">Modern</p>
-                <p className="text-sm text-textSub">
-                  Clean UI/UX design
-                </p>
-              </div>
-
-              <div className="rounded-xl border border-border bg-surface p-4 shadow-sm">
-                <p className="font-bold text-primary">Mobile</p>
-                <p className="text-sm text-textSub">
-                  Fully responsive
-                </p>
-              </div>
-            </div>
           </div>
 
+          {/* RIGHT SIDE (NEW FEATURE CARDS) */}
+          <div className="grid gap-6 sm:grid-cols-2">
 
-          <div className="relative">
-            <div className="absolute -inset-6 rounded-3xl bg-blue-200/40 blur-3xl"></div>
-
-            <div className="relative rounded-3xl border border-border bg-white p-6 shadow-xl">
-              <div className="rounded-2xl border border-border p-6">
-                <p className="text-sm text-primary">Example Layout</p>
-
-                <div className="mt-4 space-y-3">
-                  <div className="h-3 w-32 rounded-full bg-blue-400"></div>
-                  <div className="h-2 w-full rounded-full bg-gray-200"></div>
-                  <div className="h-2 w-5/6 rounded-full bg-gray-200"></div>
-                </div>
-
-                <div className="mt-6 grid grid-cols-2 gap-4">
-                  <div className="h-24 rounded-xl border border-border bg-gray-100"></div>
-                  <div className="h-24 rounded-xl border border-border bg-gray-100"></div>
-                </div>
-
-                <div className="mt-6 h-10 rounded-full bg-blue-200"></div>
-              </div>
+            <div className="col-span-2 rounded-2xl border border-border bg-surface p-6 shadow-lg">
+              <p className="text-xl font-bold text-primary">Fast Performance</p>
+              <p className="mt-2 text-textSub">
+                Your site will load quickly and run smoothly, keeping visitors engaged.
+              </p>
             </div>
+
+            <div className="rounded-2xl border border-border bg-surface p-6 shadow-lg">
+              <p className="text-lg font-bold text-primary">Modern Design</p>
+              <p className="mt-2 text-textSub">
+                Clean, professional layouts that build trust instantly.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-border bg-surface p-6 shadow-lg">
+              <p className="text-lg font-bold text-primary">Mobile Ready</p>
+              <p className="mt-2 text-textSub">
+                Fully responsive and optimized for all devices.
+              </p>
+            </div>
+
           </div>
+
         </div>
       </div>
     </section>

@@ -35,8 +35,9 @@ export default function AboutPage() {
             </h2>
 
             <p className="text-textSub mb-4">
-              My name is Max, a certified web developer focused on building clean, modern
-              websites for businesses looking to stand out online.
+            I’m Max, a web developer focused on building clean, modern websites for businesses that want to stand out online.
+            I’ve built multiple real-world projects including e-commerce sites, business websites, and custom builds, 
+            and completed professional training in frontend development.
             </p>
 
             <p className="text-textSub mb-4">
@@ -49,25 +50,6 @@ export default function AboutPage() {
               help businesses build trust and bring in customers.
             </p>
 
-            <div className="grid gap-3">
-              <div className="rounded-lg bg-surface border border-border p-3">
-                <p className="text-sm text-primary font-semibold">
-                  ⚡ Fast & Responsive
-                </p>
-              </div>
-
-              <div className="rounded-lg bg-surface border border-border p-3">
-                <p className="text-sm text-primary font-semibold">
-                   Built for Results
-                </p>
-              </div>
-
-              <div className="rounded-lg bg-surface border border-border p-3">
-                <p className="text-sm text-primary font-semibold">
-                 Clean, Modern Design
-                </p>
-              </div>
-            </div>
           </div>
 
         </div>

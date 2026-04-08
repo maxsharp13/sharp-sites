@@ -8,7 +8,7 @@ export default function NavBar() {
   const [open, setOpen] = useState(false);
 
   return (
-  <nav className="w-full border-b border-gray-200 bg-gray-100 relative">
+  <nav className="w-full border-b border-gray-200 bg-gray-200 relative">
       <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
         
       <Link href="/" className="flex items-center">
