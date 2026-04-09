@@ -1,28 +1,60 @@
 export default function ContactPage() {
     return (
       <main className="bg-background min-h-screen px-6 py-24 lg:px-10">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="mx-auto max-w-2xl">
   
           <h1 className="text-4xl font-black text-primary mb-6">
-            Start Your Project
+            Contact
           </h1>
   
           <p className="text-textSub mb-10">
-            Tell me what your vision is and lets get to work.
+            Have a project in mind? Send me a message and I’ll get back to you.
           </p>
   
-          <div className="rounded-xl border border-border bg-surface p-10 shadow-sm">
-            <p className="text-textSub mb-6">
-              Click below to send me an email with your project details.
-            </p>
+          <form
+            action="https://formspree.io/f/xkopalon"
+            method="POST"
+            className="space-y-6"
+          >
+            
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+              className="w-full rounded-lg border border-border p-3 bg-white"
+            />
   
-            <a
-              href="mailto:maxsharpnack@gmail.com?subject=Project Inquiry - Sharp Sites&body=Hi Max,%0D%0A%0D%0AI’m interested in getting a website built.%0D%0A%0D%0ABusiness Name:%0D%0AWhat I need:%0D%0ATimeline:%0D%0A%0D%0AThanks!"
-              className="inline-block rounded-full bg-blue-500 px-6 py-3 text-white font-semibold shadow-md hover:shadow-lg hover:scale-[1.02] transition-all"
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+              className="w-full rounded-lg border border-border p-3 bg-white"
+            />
+  
+            <textarea
+              name="message"
+              placeholder="Tell me about your project..."
+              required
+              rows={5}
+              className="w-full rounded-lg border border-border p-3 bg-white"
+            ></textarea>
+  
+            <button
+              type="submit"
+              className="w-full rounded-full bg-primary py-3 text-white font-semibold hover:bg-blue-400 transition"
             >
-              Email Me
-            </a>
-          </div>
+              Send Message
+            </button>
+          </form>
+  
+          <p className="mt-6 text-sm text-textSub text-center">
+            Or email me directly at{" "}
+            <span className="text-primary font-medium">
+              sharpnackmax@gmail.com
+            </span>
+          </p>
   
         </div>
       </main>

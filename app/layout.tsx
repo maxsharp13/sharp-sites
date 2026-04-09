@@ -1,6 +1,14 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
+export const metadata = {
+    title: "Sharp Sites",
+    description: "Websites built for growth",
+    icons: {
+      icon: "/favicon.png",
+    },
+  };
+
 export default function RootLayout({
   children,
 }: {

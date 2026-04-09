@@ -2,12 +2,9 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden border-b border-border bg-background">
 
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(96,165,250,0.15),_transparent_60%)]"></div>
-
       <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-10">
         <div className="grid items-center gap-14 lg:grid-cols-2">
 
-          {/* LEFT SIDE */}
           <div>
             <p className="mb-4 inline-block rounded-full bg-accent px-4 py-1 text-sm text-primary">
               Websites built for growth
@@ -39,7 +36,6 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* RIGHT SIDE (NEW FEATURE CARDS) */}
           <div className="grid gap-6 sm:grid-cols-2">
 
             <div className="col-span-2 rounded-2xl border border-border bg-surface p-6 shadow-lg">
