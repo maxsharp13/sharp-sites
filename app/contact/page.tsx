@@ -8,7 +8,7 @@ export default function ContactPage() {
           </h1>
   
           <p className="text-textSub mb-10">
-            Have a project in mind? Send me a message and I’ll get back to you.
+            Have a project in mind? Send me a message and lets make it a reality. 
           </p>
   
           <form
@@ -16,7 +16,7 @@ export default function ContactPage() {
             method="POST"
             className="space-y-6"
           >
-            
+
             <input
               type="text"
               name="name"
