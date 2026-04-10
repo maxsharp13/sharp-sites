@@ -32,7 +32,7 @@ export default function WhyUs() {
   
             <div className="rounded-xl border border-border bg-surface p-6 shadow-sm">
               <h3 className="text-lg font-bold text-primary mb-2">
-                Mobile-First
+                Mobile First
               </h3>
               <p className="text-sm text-textSub">
                 Optimized for phones, tablets, and desktops.
@@ -41,7 +41,7 @@ export default function WhyUs() {
   
             <div className="rounded-xl border border-border bg-surface p-6 shadow-sm">
               <h3 className="text-lg font-bold text-primary mb-2">
-                Tulsa-Based
+                Tulsa Based
               </h3>
               <p className="text-sm text-textSub">
                 Local developer focused on helping Tulsa businesses grow.
