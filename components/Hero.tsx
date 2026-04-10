@@ -7,16 +7,16 @@ export default function Hero() {
 
           <div>
             <p className="mb-4 inline-block rounded-full bg-accent px-4 py-1 text-sm text-primary">
-              Websites built for growth
+              Your online vision brought to life
             </p>
 
             <h1 className="text-5xl font-black leading-tight sm:text-6xl lg:text-7xl text-textMain">
-              Clean, efficient websites custom made to match your vision
+               Web design services for small businesses in Tulsa, Oklahoma.
             </h1>
 
             <p className="mt-6 max-w-xl text-lg text-textSub">
               Sharp Sites builds high-performing websites designed to build
-              trust, stand out, and convert visitors into customers.
+              trust, stand out, and convert visitors into customers. 
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
