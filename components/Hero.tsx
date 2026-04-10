@@ -15,7 +15,7 @@ export default function Hero() {
             </h1>
 
             <p className="mt-6 max-w-xl text-lg text-textSub">
-              Sharp Sites builds high-performing websites designed to build
+              Sharp Sites Web builds high-performing websites designed to build
               trust, stand out, and convert visitors into customers. 
             </p>
 

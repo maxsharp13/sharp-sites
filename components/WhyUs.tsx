@@ -3,7 +3,7 @@ export default function WhyUs() {
       <section className="bg-background px-6 py-20 lg:px-10">
         <div className="mx-auto max-w-7xl text-center">
           <h2 className="text-3xl font-black text-primary mb-4">
-            Why Choose Sharp Sites
+            Why Choose Sharp Sites Web
           </h2>
   
           <p className="mx-auto mb-12 max-w-2xl text-textSub">
@@ -44,7 +44,7 @@ export default function WhyUs() {
                 Tulsa Based
               </h3>
               <p className="text-sm text-textSub">
-                Local developer focused on helping Tulsa businesses grow.
+                I was born and raised in Tulsa, I have a passion for working with all local businesses.
               </p>
             </div>
           </div>
