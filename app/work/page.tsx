@@ -53,7 +53,7 @@ export default function Work() {
             <img
               src="/tdr.jpg"
               alt="TDR Tree Service website"
-              className="max-h-80 object-contain"
+              className="h-full w-full object-cover"
             />
             </div>
 
