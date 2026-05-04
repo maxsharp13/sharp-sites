@@ -57,19 +57,19 @@ export default function Work() {
               />
             </div>
 
-            {/* Content */}
             <div className="p-6">
               <h2 className="text-xl font-semibold text-blue-400">
-                Coffee Shop Website
+                TDR Tree Service
               </h2>
 
               <p className="mt-2 text-gray-600">
-                Responsive website showcasing a coffee shop’s menu, layout, and branding.
+                Custom-built website for a local tree service business focused on generating leads, showcasing services, and improving mobile user experience.
               </p>
 
               <a
-                href="https://maxsharp13.github.io/se_project_coffeeshop/"
+                href="https://tdr-tree-service-git-main-max-sharpnacks-projects.vercel.app/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="mt-4 inline-block font-medium text-blue-400 hover:underline"
               >
                 View Live →
