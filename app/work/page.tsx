@@ -45,16 +45,16 @@ export default function Work() {
             </div>
           </div>
 
-          {/* Coffee Project */}
+     
           <div className="rounded-2xl bg-white shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl">
             
-            {/* Image */}
+          
             <div className="h-[320px] w-full overflow-hidden rounded-t-2xl bg-gray-200">
-              <img
-                src="/coffee.png"
-                alt="Coffee Shop"
-                className="h-full w-full object-cover"
-              />
+            <img
+              src="/tdr.png"
+              alt="TDR Tree Service website"
+              className="w-full h-56 object-cover"
+            />
             </div>
 
             <div className="p-6">
