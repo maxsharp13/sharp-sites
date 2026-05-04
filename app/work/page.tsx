@@ -67,7 +67,7 @@ export default function Work() {
               </p>
 
               <a
-                href="https://tdr-tree-service-git-main-max-sharpnacks-projects.vercel.app/"
+                href="https://tdr-tree-service.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 inline-block font-medium text-blue-400 hover:underline"
