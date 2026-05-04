@@ -51,7 +51,7 @@ export default function Work() {
           
             <div className="h-[320px] w-full overflow-hidden rounded-t-2xl bg-gray-200">
             <img
-              src="/tdr.png"
+              src="/tdr.jpg"
               alt="TDR Tree Service website"
               className="w-full h-56 object-cover"
             />
